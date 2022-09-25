@@ -1,38 +1,69 @@
+html{
+  font-family: "eurostile", sans-serif !important;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  margin-top: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title_heading{
+  font-family: "eurostile", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #0a0a0a;
+  line-height: 1.125 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navlinks{
+  margin-right: 15px;
+  border: 2px solid #6E07F3;
+  border-radius: 20px;
+  font-family: "eurostile", sans-serif;
+  color: #0a0a0a !important;
+}
+
+.navlinks:hover{
+  background-color: #6E07F3;
+  color: white !important;
+}
+
+.computers_img{
+  margin-top: 7%;
+  max-width: 860px;
+}
+
+.about_section{
+  font-family: "eurostile", sans-serif;
+  padding: 9rem 4.5rem;
+  background-color: #6E07F3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hello_text{
+  font-size: 40px ;
+  font-weight: bolder ;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hello_secondary_text{
+  margin-top: 2rem; 
+  font-family: "eurostile", sans-serif;
+  width: 1000px !important;
 }
+
+.hello_secondary_text h5{
+  line-height: 1.6 !important;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+}
+
