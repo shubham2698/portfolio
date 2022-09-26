@@ -1,56 +1,155 @@
-import React, { Component,useEffect } from 'react'
+import React, { Component } from 'react'
 import Aos from 'aos';
-import SkillBar from "react-skillbars";
+import { Parallax } from 'rc-scroll-anim';
+import QueueAnim from 'rc-queue-anim';
+import TweenOne from 'rc-tween-one';
+import { OverPack } from 'rc-scroll-anim';
+import { Progress } from 'antd';
+
 
 function TechnicalSkills() {
-    useEffect(() => {
-        Aos.init({duration:1500});
-      }, [])
-
-      const SKILLS6 = [
-        {
-          type: "CSS/HTML",
-          level: 100,
-          color: { bar: "#3498db", title: { text: "#fff", background: "#2980b9" } },
-          
-        },
-        {
-          type: "Javascript",
-          level: 85,
-          color: { bar: "#4288d0", title: { text: "#fff", background: "#124e8c" } }
-        },
-        {
-          type: "React",
-          level: 75,
-          color: { bar: "#2c3e50", title: { text: "#fff", background: "#2c3e50" } }
-        },
-        {
-          type: "Kotlin",
-          level: 50,
-          color: { bar: "#5a68a5", title: { text: "#fff", background: "#46465e" } }
-        },
-        {
-          type: "Flutter",
-          level: 35,
-          color: { bar: "#525252", title: { text: "#fff", background: "#333333" } }
-        },
-        {
-          type: "Dart",
-          level: 25,
-          color: { bar: "black", title: { text: "#111", background: "#fff" } }
-        },
-        {
-          type: "NoSQL",
-          level: 10,
-          color: { bar: "#2ecc71", title: { text: "#fff", background: "#27ae60" } }
-        }
-      ];
-    return (
-      <>
+  return (
+    <>
+    
+    <div className="technical_skill" style={{height:"520px"}}>
+    <div className="container">
+    <Parallax
+          animation={[
+            { x: 0, opacity: 1, playScale: [0, 0.3] },
+          ]}
+          style={{ transform: 'translateX(-100px)', filter: 'blur(0px)', opacity: 0 }} className="Tech_skill_text" >
       
-      </>
-    )
-  }
+          Technical Skills
+    
+    </Parallax>
+    </div>
+    <div className="skills_present" >
+        <OverPack style={{ overflow: 'hidden', height: 320 }} >
+            <TweenOne key="0" animation={{ opacity: 1 }}
+              className="code-box-shape"
+              style={{ opacity: 0, marginBottom: 10 }}
+            />
+            <div className="flex-container">
+              <div >
+                  <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
+                      <div key="a" className="code-box-shape queue-anim-demo">
+                        <Progress percent={80} type="dashboard" format={() => 'Python'} strokeColor='green' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '30%', marginLeft: -165 }}>
+                      <div key="b" className="code-box-shape queue-anim-demo">
+                        <Progress percent={60} type="dashboard" format={() => 'Java'} strokeColor='#FA7070' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '40%', marginLeft: -165 }}>
+                      <div key="c" className="code-box-shape queue-anim-demo">
+                        <Progress percent={90} type="dashboard" format={() => 'HTML5'} strokeColor='#6E85B7' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-down" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '50%', marginLeft: -165 }}>
+                      <div key="d" className="code-box-shape queue-anim-demo">
+                        <Progress percent={90} type="dashboard" format={() => 'CSS3'} strokeColor='#9EB23B' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '60%', marginLeft: -165 }}>
+                      <div key="e" className="code-box-shape queue-anim-demo">
+                        <Progress percent={60} type="dashboard" format={() => 'React Js'} strokeColor='#40DFEF' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '70%', marginLeft: -165 }}>
+                      <div key="f" className="code-box-shape queue-anim-demo">
+                        <Progress percent={70} type="dashboard" format={() => 'Laravel'} strokeColor='#FD5D5D' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-down" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '80%', marginLeft: -165 }}>
+                      <div key="g" className="code-box-shape queue-anim-demo">
+                        <Progress percent={60} type="dashboard" format={() => 'AWS'} strokeColor='#AD8B73' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
+                      <div key="h" className="code-box-shape queue-anim-demo">
+                        <Progress percent={90} type="dashboard" format={() => 'Terraform'} strokeColor='#8E05C2' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-down" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
+                      <div key="i" className="code-box-shape queue-anim-demo">
+                        <Progress percent={80} type="dashboard" format={() => 'PHP'} strokeColor='#516BEB' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '30%', marginLeft: -165 }}>
+                      <div key="j" className="code-box-shape queue-anim-demo">
+                        <Progress percent={75} type="dashboard" format={() => 'MySQL'} strokeColor='#5E454B' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '40%', marginLeft: -165 }}>
+                      <div key="k" className="code-box-shape queue-anim-demo">
+                        <Progress percent={85} type="dashboard" format={() => 'NoSQL'} strokeColor='#4C4C6D' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '50%', marginLeft: -165 }}>
+                      <div key="l" className="code-box-shape queue-anim-demo">
+                        <Progress percent={95} type="dashboard" format={() => 'Github'} strokeColor='#C449C2' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '60%', marginLeft: -165 }}>
+                      <div key="m" className="code-box-shape queue-anim-demo">
+                        <Progress percent={70} type="dashboard" format={() => 'CI/CD'} strokeColor='#966C3B' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '70%', marginLeft: -165 }}>
+                      <div key="n" className="code-box-shape queue-anim-demo">
+                        <Progress percent={50} type="dashboard" format={() => 'Figma'} strokeColor='#FF884B' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '80%', marginLeft: -165 }}>
+                      <div key="o" className="code-box-shape queue-anim-demo">
+                        <Progress percent={70} type="dashboard" format={() => 'Linux'} strokeColor='#7C9473' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+              <div>
+                  <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
+                      <div key="o" className="code-box-shape queue-anim-demo">
+                        <Progress percent={40} type="dashboard" format={() => 'Angular'} strokeColor='#DA9FF9' trailColor='lightgrey' />
+                      </div>
+                  </QueueAnim>
+              </div>
+            </div>
+        </OverPack>
+    </div>
+    </div>
+    </>
+  );
+}
+
+export default TechnicalSkills;
 
 
-export default TechnicalSkills

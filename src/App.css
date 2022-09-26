@@ -1,5 +1,6 @@
 html{
   font-family: "eurostile", sans-serif !important;
+  scroll-behavior: smooth !important;
 }
 .App {
   text-align: center;
@@ -12,7 +13,7 @@ html{
 .title_heading{
   font-family: "eurostile", sans-serif;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 600;
   color: #0a0a0a;
   line-height: 1.125 !important;
 }
@@ -43,6 +44,7 @@ html{
 }
 
 .hello_text{
+  color: white;
   font-size: 40px ;
   font-weight: bolder ;
 
@@ -55,6 +57,7 @@ html{
 }
 
 .hello_secondary_text h5{
+  color: white !important;
   line-height: 1.6 !important;
 }
 
@@ -66,4 +69,21 @@ html{
   margin: 10px;
   padding: 20px;
 }
+
+.technical_skill{
+  font-size: 80px;
+  text-align: left;
+  background-color: #FFFFFF;
+  
+}
+
+.skills_present{
+  font-size: 30px;
+}
+
+
+
+
+
+
 
