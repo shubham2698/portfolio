@@ -10,6 +10,7 @@ function Landing() {
         <TitleBar/>
         <About/>
         <TechnicalSkills/>
+        
         </>
     );
   }

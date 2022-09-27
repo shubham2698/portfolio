@@ -7,6 +7,7 @@ import { OverPack } from 'rc-scroll-anim';
 import { Progress } from 'antd';
 
 
+
 function TechnicalSkills() {
   return (
     <>
@@ -30,10 +31,10 @@ function TechnicalSkills() {
               style={{ opacity: 0, marginBottom: 10 }}
             />
             <div className="flex-container">
-              <div >
+              <div className='skill'>
                   <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
                       <div key="a" className="code-box-shape queue-anim-demo">
-                        <Progress percent={80} type="dashboard" format={() => 'Python'} strokeColor='green' trailColor='lightgrey' />
+                        <Progress  percent={80} type="dashboard" format={() => 'Python'} strokeColor='green' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>

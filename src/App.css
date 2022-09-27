@@ -32,15 +32,16 @@ html{
 }
 
 .computers_img{
-  margin-top: 7%;
+  margin-top: 5%;
   max-width: 860px;
 }
 
 .about_section{
   font-family: "eurostile", sans-serif;
   padding: 9rem 4.5rem;
-  background-color: #6E07F3;
-  color: white;
+  background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("../public/images/backtest.png");
+  background-size: cover;
+  
 }
 
 .hello_text{
@@ -81,6 +82,12 @@ html{
   font-size: 30px;
 }
 
+#title_image{
+  
+  margin-top: 25px;
+  animation: bounce 2s;
+  animation-iteration-count: infinite;
+}
 
 
 
