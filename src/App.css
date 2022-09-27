@@ -1,5 +1,6 @@
 html{
   font-family: "eurostile", sans-serif !important;
+  scroll-behavior: smooth !important;
 }
 .App {
   text-align: center;
@@ -12,7 +13,7 @@ html{
 .title_heading{
   font-family: "eurostile", sans-serif;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 600;
   color: #0a0a0a;
   line-height: 1.125 !important;
 }
@@ -31,18 +32,20 @@ html{
 }
 
 .computers_img{
-  margin-top: 7%;
+  margin-top: 5%;
   max-width: 860px;
 }
 
 .about_section{
   font-family: "eurostile", sans-serif;
   padding: 9rem 4.5rem;
-  background-color: #6E07F3;
-  color: white;
+  background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("../public/images/backtest.png");
+  background-size: cover;
+  
 }
 
 .hello_text{
+  color: white;
   font-size: 40px ;
   font-weight: bolder ;
 
@@ -55,6 +58,7 @@ html{
 }
 
 .hello_secondary_text h5{
+  color: white !important;
   line-height: 1.6 !important;
 }
 
@@ -66,4 +70,27 @@ html{
   margin: 10px;
   padding: 20px;
 }
+
+.technical_skill{
+  font-size: 80px;
+  text-align: left;
+  background-color: #FFFFFF;
+  
+}
+
+.skills_present{
+  font-size: 30px;
+}
+
+#title_image{
+  
+  margin-top: 25px;
+  animation: bounce 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
 
