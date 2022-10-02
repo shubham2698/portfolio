@@ -12,7 +12,7 @@ function TechnicalSkills() {
   return (
     <>
     
-    <div className="technical_skill" style={{height:"520px"}}>
+    <div className="technical_skill" style={{height:"500px"}}>
     <div className="container">
     <Parallax
           animation={[
@@ -31,59 +31,59 @@ function TechnicalSkills() {
               style={{ opacity: 0, marginBottom: 10 }}
             />
             <div className="flex-container">
-              <div className='skill'>
+            <div>
                   <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
                       <div key="a" className="code-box-shape queue-anim-demo">
-                        <Progress  percent={80} type="dashboard" format={() => 'Python'} strokeColor='green' trailColor='lightgrey' />
+                        <Progress  percent={90} type="dashboard" format={() => 'Python'} strokeColor='#2B7A0B' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '30%', marginLeft: -165 }}>
                       <div key="b" className="code-box-shape queue-anim-demo">
-                        <Progress percent={60} type="dashboard" format={() => 'Java'} strokeColor='#FA7070' trailColor='lightgrey' />
+                        <Progress percent={70} type="dashboard" format={() => 'Java'} strokeColor='#D2001A' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '40%', marginLeft: -165 }}>
                       <div key="c" className="code-box-shape queue-anim-demo">
-                        <Progress percent={90} type="dashboard" format={() => 'HTML5'} strokeColor='#6E85B7' trailColor='lightgrey' />
+                        <Progress percent={90} type="dashboard" format={() => 'HTML5'} strokeColor='#004182' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-down" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '50%', marginLeft: -165 }}>
                       <div key="d" className="code-box-shape queue-anim-demo">
-                        <Progress percent={90} type="dashboard" format={() => 'CSS3'} strokeColor='#9EB23B' trailColor='lightgrey' />
+                        <Progress percent={90} type="dashboard" format={() => 'CSS3'} strokeColor='#9C2C77' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '60%', marginLeft: -165 }}>
                       <div key="e" className="code-box-shape queue-anim-demo">
-                        <Progress percent={60} type="dashboard" format={() => 'React Js'} strokeColor='#40DFEF' trailColor='lightgrey' />
+                        <Progress percent={60} type="dashboard" format={() => 'React Js'} strokeColor='#61DBFB' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-right" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '70%', marginLeft: -165 }}>
                       <div key="f" className="code-box-shape queue-anim-demo">
-                        <Progress percent={70} type="dashboard" format={() => 'Laravel'} strokeColor='#FD5D5D' trailColor='lightgrey' />
+                        <Progress percent={70} type="dashboard" format={() => 'Laravel'} strokeColor='#EF3C2D' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-down" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '80%', marginLeft: -165 }}>
                       <div key="g" className="code-box-shape queue-anim-demo">
-                        <Progress percent={60} type="dashboard" format={() => 'AWS'} strokeColor='#AD8B73' trailColor='lightgrey' />
+                        <Progress percent={70} type="dashboard" format={() => 'AWS'} strokeColor='#202B3C' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
               <div>
                   <QueueAnim data-aos="flip-left" key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
                       <div key="h" className="code-box-shape queue-anim-demo">
-                        <Progress percent={90} type="dashboard" format={() => 'Terraform'} strokeColor='#8E05C2' trailColor='lightgrey' />
+                        <Progress percent={90} type="dashboard" format={() => 'Terraform'} strokeColor='#7B42BC' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
@@ -139,7 +139,7 @@ function TechnicalSkills() {
               <div>
                   <QueueAnim data-aos="flip-up" key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
                       <div key="o" className="code-box-shape queue-anim-demo">
-                        <Progress percent={40} type="dashboard" format={() => 'Angular'} strokeColor='#DA9FF9' trailColor='lightgrey' />
+                        <Progress  percent={40} type="dashboard" format={() => 'Angular'} strokeColor='#DA9FF9' trailColor='lightgrey' />
                       </div>
                   </QueueAnim>
               </div>
@@ -147,6 +147,11 @@ function TechnicalSkills() {
         </OverPack>
     </div>
     </div>
+    <div className="container experience" style={{height:'200px'}}>
+              <h1 data-aos='zoom-in' className='text-end'>As a developer I am constantly</h1>
+              <h1 data-aos='zoom-in' className='text-end'>improving my <span className='skillword'>skills</span><span className='react-rotating-text-cursor skillword'>|</span></h1>    
+    </div>
+    
     </>
   );
 }

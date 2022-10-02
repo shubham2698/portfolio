@@ -2,6 +2,8 @@ import TitleBar from './Title.jsx';
 import Navbar from './Navbar.jsx';
 import About from './About_us.jsx';
 import TechnicalSkills from './TechnicalSkills.jsx';
+import Experience from './Experience.jsx';
+import Project from './Projects.jsx';
 
 function Landing() {
     return (
@@ -10,7 +12,8 @@ function Landing() {
         <TitleBar/>
         <About/>
         <TechnicalSkills/>
-        
+        <Experience/>
+        <Project/>
         </>
     );
   }
