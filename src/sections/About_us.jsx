@@ -1,15 +1,15 @@
 import React,{useEffect} from 'react';
 import Aos from 'aos';
 
+
  
 
 function About_us() {
-  useEffect(() => {
-    Aos.init({duration:1200});
-  }, [])
+  
   return (
+    
         <>
-        <img className="computers_img" src="/images/computers.svg" alt="worng path"/>
+        
           <div className="about_section" id="container">
           
               <h3 data-aos="zoom-in" className='hello_text'>Hi, I'm Shubham. Nice to meet you.</h3>
