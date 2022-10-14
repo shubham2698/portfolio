@@ -7,8 +7,10 @@ html{
 }
 
 .title{
-  padding-top: 10rem;
-  width: 100%;
+  top: 140px;
+  width: 80%;
+  position: absolute;
+  margin-left: 10%;
   
 }
 
@@ -25,11 +27,10 @@ html{
   
 }
 
-
-.landing_background{
-  position: absolute;
- 
+.landing{
+  position: relative;
 }
+
 
 .particle{
   background-color: black;
@@ -42,12 +43,25 @@ html{
 }
 
 .about_section{
+ padding-top:10rem;
   font-family: "eurostile", sans-serif;
-  padding: 9rem 4.5rem;
   background: radial-gradient(#a23982,#1f1013);
+  
   
   }
  
+  .arrow {
+    height: 200px;
+    margin-top: 5%;
+    animation: bounce 2s;
+  animation-iteration-count: infinite;
+  opacity: 70%;
+
+  }
+
+  .arrow:hover{
+    display: none;
+  }
 
 
 .hello_text{
@@ -81,7 +95,8 @@ html{
   font-size: 80px;
   text-align: left; 
   z-index: 1; 
-  background-color: #EEEEEE;
+  
+  
   
   
 }
@@ -92,7 +107,7 @@ html{
 
 #title_image{
   
-  margin-top: 25px;
+  margin-top: 50px;
   animation: bounce 2s;
   animation-iteration-count: infinite;
 }
@@ -131,14 +146,15 @@ html{
   height: 50px;
   border: none;
   outline: none;
-  color: #fff;
-  background: #111;
+  color: #fff !important;
+  background: #fff;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   z-index: 0;
   border-radius: 10px;
-  float: left !important;
+  
 }
+
 
 .glow-on-hover:before {
   content: '';
@@ -158,7 +174,7 @@ html{
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #fff !important;
 }
 
 .glow-on-hover:active:after {
@@ -167,6 +183,7 @@ html{
 
 .glow-on-hover:hover:before {
   opacity: 1;
+  
 }
 
 .glow-on-hover:after {
@@ -175,10 +192,11 @@ html{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #000;
   left: 0;
   top: 0;
   border-radius: 10px;
+  color: #000 !important;
 }
 
 @keyframes glowing {
@@ -341,17 +359,17 @@ html{
 
 
 #container{
-  background: #787A91 !important;
+  background: #0B4781 !important;
   background: -moz-linear-gradient(-45deg, #00adef 0%, #0076e5 100%);
   background: -webkit-linear-gradient(-45deg, #00adef 0%,#0076e5 100%);
   background: linear-gradient(135deg, #00adef 0%,#0076e5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adef', endColorstr='#0076e5',GradientType=1 );
   position: relative;
-  height: 490px;
+  height:550px;
   width: 100%;
   margin: 0px auto;
   padding: 0px auto;
-  z-index: -1;
+  
   
 }
 
@@ -389,7 +407,7 @@ html{
   animation-timing-function: cubic-bezier(.6, 0, .4, 1);
   animation-delay: 0.3s;
   position: absolute;
-  top: -100px;
+  top: -150px;
   left: -300px;
   background: #fff;
   width: 600px;
@@ -405,8 +423,8 @@ html{
   animation-timing-function: cubic-bezier(.6, 0, .4, 1);
   animation-delay: 0.6s;
   position: absolute;
-  top: -200px;
-  left: -250px;
+  top: -300px;
+  left: -350px;
   background: #fff;
   width: 900px;
   height: 900px;
@@ -421,8 +439,8 @@ html{
   animation-timing-function: cubic-bezier(.6, 0, .4, 1);
   animation-delay: 0.9s;
   position: absolute;
-  top: -250px;
-  left: -300px;
+  top: -450px;
+  left: -400px;
   background: #fff;
   width: 1200px;
   height: 1200px;
@@ -437,8 +455,8 @@ html{
   animation-timing-function: cubic-bezier(.6, 0, .4, 1);
   animation-delay: 1.2s;
   position: absolute;
-  top: -400px;
-  left: -450px;
+  top: -600px;
+  left: -350px;
   background: #fff;
   width: 1300px;
   height: 1300px;
@@ -450,3 +468,87 @@ html{
 .navbar_heading{
   font-size: 5vh !important;
 }
+
+
+
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #367E18 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.skills_section{
+  margin-top: 2rem;
+}
+
+
+.skillLogo{
+  height: 100px;
+  width: 100px;
+}
+
+.ocean {
+  height: 180px; /* change the height of the waves here */
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.wave {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(3) {
+  bottom: 0;
+  animation: wave 20s -1s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-25%);}
+    100% {transform: translateX(-50%);}
+}
+
+

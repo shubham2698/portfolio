@@ -6,7 +6,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function TitleBar() {
   return (
     <>
-    <Navbar fixed='top' expand="lg" >
+    
+    <Navbar  expand="lg" style={{backgroundColor:'transparent',position:'relative'}} >
       <Container>
         <Navbar.Brand href="#home" className='navbar_heading' >Shubham Joshi</Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
