@@ -1,25 +1,38 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function TitleBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <>
+    
+    <Navbar  expand="lg" style={{backgroundColor:'transparent',position:'relative'}} >
       <Container>
-        <Navbar.Brand href="/" style={{fontSize:"30px", marginRight:"20px" , fontFamily: '"eurostile", sans-serif'}}>Shubham Joshi</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="#home" className='navbar_heading' >Shubham Joshi</Navbar.Brand>
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link  href="#home">Home</Nav.Link>
-            <Nav.Link  href="#about">About Me</Nav.Link>
-            <Nav.Link  href="#work">My Work</Nav.Link>
-            <Nav.Link className='navlinks' href="#link">Say Hello</Nav.Link>
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
+    
+    </>
   );
 }
 
 export default TitleBar;
-
