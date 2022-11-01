@@ -5,7 +5,7 @@ import About from './About_us.jsx';
 import TechnicalSkills from './TechnicalSkills.jsx';
 import Experience from './Experience.jsx';
 import Project from './Projects.jsx';
-import Footer from './Footer.jsx';
+import Timeline from './Timeline.jsx';
 function Landing() {
     return (
         <>
@@ -15,7 +15,7 @@ function Landing() {
         <TechnicalSkills/>
         <Experience/>
         {/* <Project/> */}
-        <Footer/>
+        <Timeline/>
         </>
     );
   }

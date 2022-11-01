@@ -7,6 +7,7 @@ function Experience() {
   }, [])
   return (
         <>
+       
         <div class="area" >
             <ul class="circles">
             <div className="work_exp">      

@@ -26,7 +26,11 @@ function About_us() {
               <div id="circle-xxlarge"></div>
             </div>
           </div>
-          
+          <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
           
           
         </>

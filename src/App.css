@@ -91,15 +91,15 @@ html{
   padding: 20px;
 }
 
-.technical_skill{
-  font-size: 80px;
-  text-align: left; 
-  z-index: 1; 
-  
-  
-  
-  
+.tcn h1{
+  z-index: 1 !important;
+  font-size: 120px !important;
+  text-align: left;
+  position: relative;
+  margin-left: 60px;
+  color: #0B4781;
 }
+
 
 .skills_present{
   font-size: 30px;
@@ -131,6 +131,7 @@ html{
 
 .experience h1{
   color: grey;
+  margin-top: 0px;
 }
 
 .wk{
@@ -550,5 +551,3 @@ html{
     50% {transform: translateX(-25%);}
     100% {transform: translateX(-50%);}
 }
-
-
