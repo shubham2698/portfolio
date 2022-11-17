@@ -6,16 +6,19 @@ import TechnicalSkills from './TechnicalSkills.jsx';
 import Experience from './Experience.jsx';
 import Project from './Projects.jsx';
 import Timeline from './Timeline.jsx';
+import Footer from './Footer.jsx';
+
 function Landing() {
     return (
         <>
         <Navbar/>
-        <TitleBar/>
+        {/* <TitleBar/> */}
         <About/>
         <TechnicalSkills/>
         <Experience/>
         {/* <Project/> */}
         <Timeline/>
+        <Footer/>
         </>
     );
   }
