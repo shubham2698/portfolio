@@ -12,12 +12,12 @@ function Landing() {
     return (
         <>
         <Navbar/>
-        {/* <TitleBar/> */}
+        <TitleBar/>
         <About/>
         <TechnicalSkills/>
         <Experience/>
-        {/* <Project/> */}
-        <Timeline/>
+        {/* <Project/>
+        <Timeline/> */}
         <Footer/>
         </>
     );

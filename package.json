@@ -34,6 +34,7 @@
     "react-customizable-progressbar": "^1.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.6.0",
     "react-move": "^6.5.0",
     "react-particles-js": "^2.4.0-beta.2",
     "react-rotating-text": "^1.4.1",

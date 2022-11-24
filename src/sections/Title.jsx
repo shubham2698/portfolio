@@ -39,7 +39,7 @@ function Title() {
         </div>
         
           <div className="title animate-charcter">
-              <ReactRotatingText className='title_heading' items={['Full-Stack Developer', 'Jr. DevOps Engineer', 'Ui/Ux Designer']} />
+              <ReactRotatingText className='title_heading' items={['Full-Stack Developer', 'DevOps Engineer', 'Ui/Ux Designer']} />
               <h4 >I design and code beautifully simple things, and I love what I do.</h4>
               
               

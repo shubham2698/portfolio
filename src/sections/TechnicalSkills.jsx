@@ -1,163 +1,89 @@
-import  { React ,useState, useRef } from 'react'
-import Aos from 'aos';
-import { Parallax } from 'rc-scroll-anim';
-import QueueAnim from 'rc-queue-anim';
-import { Progress } from 'antd';
-import { Wave } from "react-animated-text";
+import  { React } from 'react'
+import Card from 'react-bootstrap/Card';
+
 function TechnicalSkills() { 
-  
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
-  return (
+  return(
     <>
-    
-    <div className="technical_skill" style={{height:"590px"}}>
-   
-    <div className="container">
-    {/* <Parallax
-          animation={[
-            { x: 0, opacity: 1, playScale: [0, 0.3] },
-          ]}
-          style={{ transform: 'translateX(-100px)', filter: 'blur(0px)', opacity: 0 }} className="Tech_skill_text" >
+      <div className="tech_skills container"  >
+        <h2 className='text-start tech_skill_heading' >What I do</h2>
+        <p className='text-start tech_skill_p' >Below is the quick overview of my technical skill sets and technology i use. <br/>Want to find more about my experience ? Checkout my <span><a href="">Resume</a> & <a href="">Work Experience</a></span></p>
+      </div>
+      <div className="tech_skill">
+      <div className="flex-container">
+      <div>
       
-          Technical Skills
-    
-    </Parallax> */}
-    <div>
-    
-    </div>
-    </div>
-    <div className="tcn">
-      <h1 data-aos="flip-up" >Technical Skills</h1>
-    </div>
-    <div className='container'>
-    <div className="flex-container">
-            <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
-                      <div key="a" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={90} type="dashboard" format={() => 'Python'} strokeColor='#2B7A0B' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '30%', marginLeft: -165 }}>
-                      <div key="b" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={70} type="dashboard" format={() => 'Java'} strokeColor='#D2001A' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '40%', marginLeft: -165 }}>
-                      <div key="c" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={90} type="dashboard" format={() => 'HTML5'} strokeColor='#004182' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '50%', marginLeft: -165 }}>
-                      <div key="d" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={90} type="dashboard" format={() => 'CSS3'} strokeColor='#9C2C77' trailColor='lightgrey'/>
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '60%', marginLeft: -165 }}>
-                      <div key="e" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={60} type="dashboard" format={() => 'React Js'} strokeColor='#61DBFB' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '70%', marginLeft: -165 }}>
-                      <div key="f" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={70} type="dashboard" format={() => 'Laravel'} strokeColor='#EF3C2D' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '80%', marginLeft: -165 }}>
-                      <div key="g" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={70} type="dashboard" format={() => 'AWS'} strokeColor='#202B3C' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
-                      <div key="h" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={90} type="dashboard" format={() => 'Terraform'} strokeColor='#7B42BC' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '20%', marginLeft: -165 }}>
-                      <div key="i" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={80} type="dashboard" format={() => 'PHP'} strokeColor='#516BEB' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '30%', marginLeft: -165 }}>
-                      <div key="j" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={75} type="dashboard" format={() => 'MySQL'} strokeColor='#5E454B' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '40%', marginLeft: -165 }}>
-                      <div key="k" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={85} type="dashboard" format={() => 'NoSQL'} strokeColor='#4C4C6D' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '50%', marginLeft: -165 }}>
-                      <div key="l" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={95} type="dashboard" format={() => 'Github'} strokeColor='#C449C2' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '60%', marginLeft: -165 }}>
-                      <div key="m" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={70} type="dashboard" format={() => 'CI/CD'} strokeColor='#966C3B' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '70%', marginLeft: -165 }}>
-                      <div key="n" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={50} type="dashboard" format={() => 'Figma'} strokeColor='#FF884B' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '80%', marginLeft: -165 }}>
-                      <div key="o" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down' percent={70} type="dashboard" format={() => 'Linux'} strokeColor='#7C9473' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-              <div>
-                  <QueueAnim key="queue" leaveReverse style={{ marginTop:'200px', float: 'left', position: 'absolute', left: '90%', marginLeft: -165 }}>
-                      <div key="p" className="code-box-shape queue-anim-demo">
-                        <Progress data-aos='fade-down'  percent={40} type="dashboard" format={() => 'JavaScript'} strokeColor='#DA9FF9' trailColor='lightgrey' />
-                      </div>
-                  </QueueAnim>
-              </div>
-            </div>
-    </div>
-    
-    </div>
-    <div className="experience" style={{height:'200px'}}>
-      <h1 data-aos='zoom-in' className='text-end'>As a developer I am constantly <br />
-      improving my <span className='skillword'>skills</span><span className='react-rotating-text-cursor skillword'>|</span></h1>    
-    </div>
-   
+      <Card style={{ width: '20rem' }}>
+      <div className="conatainer">
+          <div className="tech_logo text-start">
+            <img src="/images/aws.png" alt="" />
+            <img src="/images/huawei.png" alt="" />
+            <img src="/images/terraform.png" alt="" />
+            <img src="/images/bash.png" alt="" />
+          </div>
+        </div>
+        <Card.Body>
+          <Card.Title className='ct' >DevOps & Cloud Automation</Card.Title>
+          <Card.Text className='ctt' >
+            AWS <br />
+            Terraform <br />
+            Shell Scripting , CLI <br />
+            Linux <br />
+            EC2 Failover <br />
+            AWS SSM <br />
+            Serveless : Lambda Function <br />
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
+
+      <div>
+      <Card style={{ width: '20rem' }}>
+      <div className="conatainer">
+          <div className="tech_logo text-start">
+            <img src="/images/react-js.png" alt="" />
+            <img src="/images/laravel.png" alt="" />
+            <img src="/images/java.png" alt="" />
+            <img src="/images/python.png" alt="" />
+          </div>
+        </div>
+        <Card.Body>
+          <Card.Title className='ct' >Full Stack Web Development</Card.Title>
+          <Card.Text className='ctt' >
+            HTML , CSS <br />
+            React JS & Libraries <br />
+            Java <br />
+            Python <br />
+            Laravel <br />
+            MVC <br />
+            MYSQL , MongoDB <br />
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
+
+      <div>
+      <Card style={{ width: '20rem' }}>
+      <div className="conatainer">
+          <div className="tech_logo text-start">
+            <img src="/images/flutter.png" alt="" />
+            <img src="/images/androidstudio.png" alt="" />
+          </div>
+        </div>
+        <Card.Body>
+          <Card.Title className='ct' >Android / iOs Development</Card.Title>
+          <Card.Text className='ctt'>
+            Flutter <br />
+            Android Java
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
+
+      <div>
+      </div>
       
-    
-    
-    
-    
+      </div>
+      </div>
     </>
   );
 }

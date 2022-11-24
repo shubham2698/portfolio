@@ -14,9 +14,9 @@ function Experience() {
         </div>        
         <div className="container" style={{height:'600px',zIndex:1}}>
             
-            <h1 data-aos='fade-up' style={{color:'white'}}  className='text-start wk'>Work Experience</h1>            
+            <h1 data-aos='fade-up' style={{color:'white'}}  className='text-end wk'>Work Experience</h1>            
             <div className='work_exp'>
-              <h2 style={{color:'white',fontWeight:'600'}} data-aos='fade-left' className='text-start' >Freelancer as a DevOps Engineer( 2021-2022 ) :</h2> 
+              <h2 style={{color:'white',fontWeight:'600'}} data-aos='fade-left' className='text-start' >Freelancer as a DevOps Engineer ( 2021-2022 )</h2> 
               <h5 style={{color:'white'}} data-aos='fade-left' className='text-start'>
               <h4 style={{color:'white'}}>Worked On Following Tasks For <span ><img style={{height:'3rem'}} src="/images/vodafone-logo.png" alt="" /></span></h4>
               o EC2 Failover : Lambda , CloudWatch , python Boto3 , EIP.<br/>

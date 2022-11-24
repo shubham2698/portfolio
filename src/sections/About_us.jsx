@@ -9,7 +9,7 @@ function About_us() {
   return (
     
         <>
-        
+        <div id='about_us' ></div>
           <div className="about_section" id="container">
           
               <h3 data-aos="zoom-in" className='hello_text'>Hi, I'm Shubham. Nice to meet you.</h3>
@@ -26,10 +26,10 @@ function About_us() {
               <div id="circle-xxlarge"></div>
             </div>
           </div>
-          <div class="ocean">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+          <div className="ocean" id='tech_skill'>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
         </div>
           
           

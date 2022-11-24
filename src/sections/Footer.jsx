@@ -33,7 +33,7 @@ export default function Footer() {
           
         </CDBBox>
         <CDBBox>
-          <a href="https://drive.google.com/file/d/1T8UeiFbiExUGQtfZCUC2b3wWTo73Du1y/view?usp=sharing"><button class="glow-on-hover" type="button" >Download CV </button></a>
+          <a href="https://drive.google.com/file/d/1T8UeiFbiExUGQtfZCUC2b3wWTo73Du1y/view?usp=sharing"><button className="glow-on-hover" type="button" >Download CV </button></a>
         </CDBBox>
       </CDBBox>
     </CDBFooter>
