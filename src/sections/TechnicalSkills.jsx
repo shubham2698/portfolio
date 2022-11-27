@@ -4,16 +4,18 @@ import Card from 'react-bootstrap/Card';
 function TechnicalSkills() { 
   return(
     <>
-      <div className="tech_skills container"  >
+    
+
+      <div style={{height:'100vh'}} >
+      <div className="container" >
         <h2 className='text-start tech_skill_heading' >What I do</h2>
         <p className='text-start tech_skill_p' >Below is the quick overview of my technical skill sets and technology i use. <br/>Want to find more about my experience ? Checkout my <span><a href="">Resume</a> & <a href="">Work Experience</a></span></p>
       </div>
-      <div className="tech_skill">
-      <div className="flex-container">
+      <div className="flex-container tech_skill_cards">
       <div>
       
-      <Card style={{ width: '20rem' }}>
-      <div className="conatainer">
+      <Card style={{ width: '18rem'}}>
+      <div className="container">
           <div className="tech_logo text-start">
             <img src="/images/aws.png" alt="" />
             <img src="/images/huawei.png" alt="" />
@@ -37,7 +39,7 @@ function TechnicalSkills() {
       </div>
 
       <div>
-      <Card style={{ width: '20rem' }}>
+      <Card style={{ width: '18rem' }}>
       <div className="conatainer">
           <div className="tech_logo text-start">
             <img src="/images/react-js.png" alt="" />
@@ -62,10 +64,28 @@ function TechnicalSkills() {
       </div>
 
       <div>
-      <Card style={{ width: '20rem' }}>
+      <Card style={{ width: '18rem' }}>
       <div className="conatainer">
           <div className="tech_logo text-start">
-            <img src="/images/flutter.png" alt="" />
+            <img src="/images/photoshop.png" alt="" />
+            <img src="/images/figma.png" alt="" style={{width:'30px'}} />
+          </div>
+        </div>
+        <Card.Body>
+          <Card.Title className='ct' >Ui Design</Card.Title>
+          <Card.Text className='ctt'>
+            Adobe Photoshop CS6 <br />
+            Figma
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
+
+      <div>
+      <Card style={{ width: '18rem' }}>
+      <div className="conatainer">
+          <div className="tech_logo text-start">
+            <img src="/images/Flutter.png" alt="" />
             <img src="/images/androidstudio.png" alt="" />
           </div>
         </div>
@@ -78,12 +98,10 @@ function TechnicalSkills() {
         </Card.Body>
       </Card>
       </div>
+          
+      </div>
+      </div>
 
-      <div>
-      </div>
-      
-      </div>
-      </div>
     </>
   );
 }

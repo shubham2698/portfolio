@@ -11,6 +11,7 @@ import Footer from './Footer.jsx';
 function Landing() {
     return (
         <>
+        
         <Navbar/>
         <TitleBar/>
         <About/>

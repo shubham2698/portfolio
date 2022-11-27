@@ -17,6 +17,7 @@
     "bootstrap": "^5.2.1",
     "cdbreact": "^1.5.3",
     "d3-ease": "^3.0.1",
+    "fa-icons": "^0.2.0",
     "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "mdb-react-ui-kit": "^5.0.0",

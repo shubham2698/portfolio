@@ -7,7 +7,7 @@ function TitleBar() {
   return (
     <>
     
-    <Navbar fixed='top' className='navbar' expand="lg" style={{backgroundColor:'transparent'}} >
+    <Navbar sticky='top' className='navbar' expand="lg" >
       <Container>
         <Navbar.Brand href="/" className='navbar_heading' >Shubham Joshi</Navbar.Brand>
         <Nav className="justify-content-end flex-grow-1 ">
@@ -19,6 +19,7 @@ function TitleBar() {
                   
         </Nav>
       </Container>
+      
     </Navbar>
     
     </>

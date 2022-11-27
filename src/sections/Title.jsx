@@ -18,7 +18,7 @@ function Title() {
                   "value":250
                 },
                 "line_linked":{
-                  "color":'#251B37',
+                  "color":'#fff',
                 },
                 "size":{
                   "value":3
