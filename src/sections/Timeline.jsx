@@ -6,12 +6,7 @@ function Timeline() {
     return (
         <>
         
-          <div className="timeline_background">
-          <div className="timeline_text text-center">
-        <h1 data-aos="flip-up">Timeline</h1>
-        </div>
           
-          </div>
         </>
     );
   }

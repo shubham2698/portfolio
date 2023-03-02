@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import 'rc-texty/assets/index.css';
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Landing/>
     </div>
   );

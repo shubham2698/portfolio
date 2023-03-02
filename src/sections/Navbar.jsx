@@ -7,19 +7,19 @@ function TitleBar() {
   return (
     <>
     
-    <Navbar sticky='top' className='navbar' expand="lg" >
+    <Navbar bg="#0000" expand="lg" className='navbar' sticky='top' variant='dark' >
       <Container>
-        <Navbar.Brand href="/" className='navbar_heading' >Shubham Joshi</Navbar.Brand>
-        <Nav className="justify-content-end flex-grow-1 ">
-            <Nav.Link className='nav_link' href="#about_us">About Me</Nav.Link>
+        <Navbar.Brand href="#home"  className='navbar_heading'>Shubham Joshi</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="justify-content-end flex-grow-1">
+          <Nav.Link className='nav_link' href="#about_us">About Me</Nav.Link>
             <Nav.Link className='nav_link' href="#tech_skill">My Skills</Nav.Link>
-            <Nav.Link className='nav_link' href="#action2">Work Experience</Nav.Link>
-            <Nav.Link className='nav_link' href="#action2">Download CV</Nav.Link>
-
-                  
-        </Nav>
+            <Nav.Link className='nav_link' href="#wr_exp">Work Experience</Nav.Link>
+            <Nav.Link className='nav_link' href="#action2">Contact Me</Nav.Link>         
+          </Nav>
+        </Navbar.Collapse>
       </Container>
-      
     </Navbar>
     
     </>
